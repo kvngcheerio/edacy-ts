@@ -34,6 +34,11 @@ export const config = {
   isProduction: envVars.NODE_ENV === 'production',
   secret: envVars.SECRET,
   superAdmin: envVars.SUPER_ADMIN,
-  db_url: envVars.DB_URL
+  db_url: envVars.DB_URL,
+  aws: {
+    access_key_id: envVars.AWS_ACCESS_KEY_ID,
+    secret_access_key: envVars.AWS_SECRET_ACCESS_KEY,
+    region: envVars.AWS_REGION,
+  },
 
 };
